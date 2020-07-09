@@ -2,5 +2,5 @@
 
 class MeasurementSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :time, :sport_id
+  attributes :time, :date, :sport_id
 end
