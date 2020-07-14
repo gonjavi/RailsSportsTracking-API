@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'rack-cors', '~> 0.4.0'
 gem 'fast_jsonapi', '~> 1.1', '>= 1.1.1'
 gem 'rubocop', '~> 0.87.1', require: false
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
