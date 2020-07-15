@@ -27,26 +27,6 @@ module Api
         end
       end
 
-      def update
-        sport = Sport.find_by(slug: params[:slug])
-
-        if sport.save
-          render json: SportSerializer.new(sport, options).serialized_json
-        else
-          render json: { error: sport.errors.messages }, status: 422
-        end
-      end
-
-      def destroy
-        sport = Sport.find_by(slug: params[:slug])
-
-        if sport.destroy
-          head :no_content
-        else
-          render json: { error: sport.errors.messages }, status: 422
-        end
-      end
-
       private
 
       def sports_params

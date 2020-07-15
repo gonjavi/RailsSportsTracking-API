@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :sports, param: :slug
-      resources :measurements, only: %i[create destroy]
+      resources :measurements
     end
   end
 end
