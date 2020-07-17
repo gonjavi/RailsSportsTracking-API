@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_07_17_124735) do
   enable_extension "plpgsql"
 
   create_table "measurements", force: :cascade do |t|
-    t.time "time"
+    t.string "time"
     t.bigint "sport_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
