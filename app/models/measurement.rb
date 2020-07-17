@@ -7,5 +7,6 @@ class Measurement < ApplicationRecord
 
   scope :yesterday, -> { where('date = ?', Date.yesterday).sum(:time) }
   scope :today, -> { where('date >= ? ', Date.today).sum(:time) }
+  scope :twodaysago, -> { where('date >= ? and date <= ? ', Date.yesterday - 1, Date.yesterday).sum(:time) }
   scope :lastweek, -> { where('date >= ? and date <= ? ', Date.today - 8, Date.today).sum(:time) }
 end

@@ -11,12 +11,14 @@ module Api
         today = Measurement.today
         yesterday = Measurement.yesterday
         lastweek = Measurement.lastweek
+        twodaysago = Measurement.twodaysago
 
         progress = Progress.new({
                                   "id": 1,
                                   "today": today,
                                   "yesterday": yesterday,
-                                  "lastweek": lastweek
+                                  "lastweek": lastweek,
+                                  "twodaysago": twodaysago,
                                 })
 
         render json: TodaySerializer.new(progress).serialized_json

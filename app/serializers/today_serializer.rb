@@ -2,5 +2,5 @@
 
 class TodaySerializer
   include FastJsonapi::ObjectSerializer
-  attributes :today, :yesterday, :lastweek
+  attributes :today, :yesterday, :twodaysago, :lastweek
 end
