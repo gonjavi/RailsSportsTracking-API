@@ -1,8 +1,3 @@
 AllCops:
   Exclude:
    # - 'bin/bundle'
-   - Lint/RaiseException (0.81)
-   - Lint/StructNewOverride (0.81)
-   - Style/HashEachMethods (0.80)
-   - Style/HashTransformKeys (0.80)
-   - Style/HashTransformValues (0.80)
