@@ -16,7 +16,7 @@ module Api
                                   "today": today,
                                   "yesterday": yesterday,
                                   "lastweek": lastweek,
-                                  "twodaysago": twodaysago,
+                                  "twodaysago": twodaysago
                                 })
 
         render json: TodaySerializer.new(progress).serialized_json
