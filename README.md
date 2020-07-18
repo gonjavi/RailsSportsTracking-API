@@ -41,6 +41,11 @@ $ rails db:migrate
 ```bash
 $ rails s
 ```
+## RSpec Tests
+
+For RSpec testing run the following commands:
+
+- rspec --format documentation
 
 ## API Link
 
@@ -57,6 +62,7 @@ $ rails s
 
 - Github: [@gonjavi](https://github.com/gonjavi)
 - Linkedin: [@g-javier-mancilla](https://www.linkedin.com/in/g-mancillla)
+
 
 ## 🤝 Contributing
 
