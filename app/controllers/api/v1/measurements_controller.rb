@@ -2,7 +2,7 @@ module Api
   module V1
     class MeasurementsController < ApplicationController
       protect_from_forgery with: :null_session
-      before_action :set_measurement, only: %i(show update destroy)
+      before_action :set_measurement, only: %i[show update destroy]
 
       def index
         measurement = Measurement.all
@@ -19,14 +19,6 @@ module Api
 
         if measurement.save
           render json: MeasurementSerializer.new(measurement).serialized_json
-        else
-          render json: { error: measurement.errors.messages }, status: 422
-        end
-      end
-
-      def update  
-        if @measurement.save
-          render json: MeasurementSerializer.new(@measurement).serialized_json
         else
           render json: { error: measurement.errors.messages }, status: 422
         end
