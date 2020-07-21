@@ -2,16 +2,12 @@ module Api
   module V1
     class MeasurementsController < ApplicationController
       protect_from_forgery with: :null_session
-      before_action :set_measurement, only: %i[show update destroy]
+      before_action :set_measurement, only: %i[destroy]
 
       def index
         measurement = Measurement.all
 
         render json: MeasurementSerializer.new(measurement).serialized_json
-      end
-
-      def show
-        render json: MeasurementSerializer.new(@measurement).serialized_json
       end
 
       def create
@@ -39,7 +35,7 @@ module Api
       end
 
       def measurement_params
-        params.require(:measurement).permit(:id, :time, :date, :sport_id)
+        params.require(:measurement).permit(:time, :date, :sport_id)
       end
     end
   end
