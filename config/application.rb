@@ -15,6 +15,7 @@ module Railssportstrack
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    config.factory_bot.definition_file_paths = ['custom/factories']
     initializer(:remove_action_mailbox_and_activestorage_routes, after: :add_routing_paths) do |app|
       app.routes_reloader.paths.delete_if { |path| path =~ /activestorage/ }
       app.routes_reloader.paths.delete_if { |path| path =~ /actionmailbox/ }
