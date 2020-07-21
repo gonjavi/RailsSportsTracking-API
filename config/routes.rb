@@ -3,9 +3,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :sports, param: :slug, only: [:index] 
-      resources :measurements, only: [:index, :create, :destroy] 
-      resources :progresses, only: [:index] 
+      resources :sports, param: :slug, only: [:index]
+      resources :measurements, only: %i[index create destroy]
+      resources :progresses, only: %i[index]
     end
   end
 end

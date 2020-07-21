@@ -7,7 +7,7 @@ module Api
         sports = Sport.all
 
         render json: SportSerializer.new(sports, options).serialized_json
-      end     
+      end
 
       private
 
