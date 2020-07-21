@@ -2,6 +2,8 @@ AllCops:
   Exclude:
     - "Guardfile"
     - "Rakefile"
+    - "bin/bundle"
+    - "spec/rails_helper.rb"
 
   DisplayCopNames: true
 
