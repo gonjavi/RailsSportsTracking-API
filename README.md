@@ -1,12 +1,8 @@
 ## Rails Sports Tracking API
 
-This is a sports tracking  API built with Ruby on Rails and deployed on Heroku. The sports that can be tracked are Jogging, Cycling, Swimming, Weight lifting, Treadmill, Walking. The measurements that can be taken are date and time on the selected sport.
+This is a sports tracking  API built with Ruby on Rails and deployed on Heroku. The sports that can be tracked are Jogging, Cycling, Swimming, Weight lifting, Treadmill, Walking. The measurements that can be taken are date and time on the selected sport. This API uses Rack cors middleware to support Cross-Origin Resource Sharing (CORS) for Rack compatible web applications.
 
-This project has 2 tables (sports and measurements) with associations a sport can have many measurements, and a measurement belongs to a sport. 
-
-This API uses Rack cors middleware to support Cross-Origin Resource Sharing (CORS) for Rack compatible web applications.
-
-It accepts Http requests to create, delete, and display measurements, display the sports and display the progress during the time. It serialized to JSON using the gem Fast_jsonapi, and send it back as a response.
+This project has 2 models(sports and measurements) with associations a sport can have many measurements, and a measurement belongs to a sport. It accepts Http requests to create, delete, and display measurements, display the sports and display the progress during the time. It serialized to JSON using the gem Fast_jsonapi, and send it back as a response.
 
 ## To test the deployed API
 
