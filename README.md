@@ -1,5 +1,5 @@
-## Rails/React-Redux Capstone Project
-T
+## Rails Sports Tracking API
+
 This is a sports tracking  API built with Ruby on Rails and deployed on Heroku. The sports that can be tracked are Jogging, Cycling, Swimming, Weight lifting, Treadmill, Walking. The measurements that can be taken are date and time on the selected sport.
 
 This project has 2 tables (sports and measurements) with associations a sport can have many measurements, and a measurement belongs to a sport. 
@@ -7,6 +7,28 @@ This project has 2 tables (sports and measurements) with associations a sport ca
 This API uses Rack cors middleware to support Cross-Origin Resource Sharing (CORS) for Rack compatible web applications.
 
 It accepts Http requests to create, delete, and display measurements, display the sports and display the progress during the time. It serialized to JSON using the gem Fast_jsonapi, and send it back as a response.
+
+## To test the deployed API
+
+Use a program like Insomnia or Postman.
+
+ - You can use GET to the following URL to see the sports the six sports:
+
+https://trackingapi-gon.herokuapp.com/api/v1/sports.json
+
+- You can use GET to the following URL to get the measurements registers:
+https://trackingapi-gon.herokuapp.com/api/v1/measurements
+
+- You can use POST to the following URL to create a new measurement:
+https://trackingapi-gon.herokuapp.com/api/v1/measurements
+including JSON similar to the next one:
+{
+	"time": "05:02",
+	"date": "2020-07-15T08:49:51.141Z",
+	"sport_id": 3
+}
+
+- You can use DELETE to the following URL to destroy a measurement, adding the id number of the measurement at the end:
 
 
 
