@@ -1,5 +1,13 @@
 ## Rails/React-Redux Capstone Project
-This is part of the backt-end part of the sports tracking mobile app capstone project built together with the [React and Redux front-end](https://github.com/gonjavi/reactSportsTracking).
+T
+This is a sports tracking  API built with Ruby on Rails and deployed on Heroku. The sports that can be tracked are Jogging, Cycling, Swimming, Weight lifting, Treadmill, Walking. The measurements that can be taken are date and time on the selected sport.
+
+This project has 2 tables (sports and measurements) with associations a sport can have many measurements, and a measurement belongs to a sport. 
+
+This API uses Rack cors middleware to support Cross-Origin Resource Sharing (CORS) for Rack compatible web applications.
+
+It accepts Http requests to create, delete, and display measurements, display the sports and display the progress during the time. It serialized to JSON using the gem Fast_jsonapi, and send it back as a response.
+
 
 
 ### Prerequisites
@@ -45,7 +53,7 @@ $ rails s
 
 For RSpec testing run the following commands:
 
-- rspec --format documentation
+- $rspec --format documentation
 
 ## API Link
 
