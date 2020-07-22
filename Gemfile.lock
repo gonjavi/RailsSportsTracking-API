@@ -246,6 +246,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  factory_bot (~> 5.2.0)
   factory_bot_rails
   fast_jsonapi (~> 1.1, >= 1.1.1)
   jbuilder (~> 2.7)

@@ -1,6 +1,6 @@
 class Sport < ApplicationRecord
   validates :name, presence: true
-  has_many :measurements
+  has_many :measurements, dependent: :destroy
   before_create :slugify
 
   def slugify

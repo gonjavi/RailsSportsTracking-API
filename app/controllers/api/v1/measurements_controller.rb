@@ -21,11 +21,7 @@ module Api
       end
 
       def destroy
-        if @measurement.destroy
-          head :no_content
-        else
-          render json: { error: measurement.errors.messages }, status: 422
-        end
+        head :no_content if @measurement.destroy
       end
 
       private
