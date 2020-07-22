@@ -8,15 +8,16 @@ This project has 2 models(sports and measurements) with associations a sport can
 
 Use a program like Insomnia or Postman.
 
- - You can use GET to the following URL to see the sports the six sports:
+ - You can use GET to the following URL to see the six sports:
 
 https://trackingapi-gon.herokuapp.com/api/v1/sports.json
 
-- You can use GET to the following URL to get the measurements registers:
+- You can use GET to the following URL to get all measurements:
 https://trackingapi-gon.herokuapp.com/api/v1/measurements
 
 - You can use POST to the following URL to create a new measurement:
 https://trackingapi-gon.herokuapp.com/api/v1/measurements
+
 including JSON similar to the next one:
 {
 	"time": "05:02",
@@ -26,6 +27,7 @@ including JSON similar to the next one:
 
 - You can use DELETE to the following URL to destroy a measurement, adding the id number of the measurement at the end:
 
+https://trackingapi-gon.herokuapp.com/api/v1/measurements/id
 
 
 ### Prerequisites
