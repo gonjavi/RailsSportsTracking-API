@@ -13,9 +13,11 @@ Use a program like Insomnia or Postman.
 https://trackingapi-gon.herokuapp.com/api/v1/sports.json
 
 - You can use GET to the following URL to get all measurements:
+
 https://trackingapi-gon.herokuapp.com/api/v1/measurements
 
 - You can use POST to the following URL to create a new measurement:
+
 https://trackingapi-gon.herokuapp.com/api/v1/measurements
 
 including JSON similar to the next one:
