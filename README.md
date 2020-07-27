@@ -20,7 +20,7 @@ https://trackingapi-gon.herokuapp.com/api/v1/measurements
 
 https://trackingapi-gon.herokuapp.com/api/v1/measurements
 
-including JSON similar to the next one:
+including a JSON similar to the next one:
 {
 	"time": "05:02",
 	"date": "2020-07-15T08:49:51.141Z",
