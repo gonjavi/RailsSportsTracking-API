@@ -5,7 +5,7 @@ RSpec.describe Api::V1::MeasurementsController, type: :controller do
   it { should route(:post, '/api/v1/measurements').to(action: :create) }
   it { should route(:delete, '/api/v1/measurements/1').to(action: :destroy, id: 1) }
 
-  let(:sport) { Sport.create({name: "Wrestling"}) }
+  let(:sport) { Sport.create({ name: 'Wrestling' }) }
   let(:valid_attributes) { { time: '00:40', date: '22/05/2020', sport_id: sport.id } }
   let(:invalid_attributes) { { time: '', date: '', sport_id: nil } }
 

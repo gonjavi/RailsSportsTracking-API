@@ -10,35 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_22_215240) do
-
+ActiveRecord::Schema.define(version: 20_200_722_215_240) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "measurements", force: :cascade do |t|
-    t.string "time"
-    t.bigint "sport_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.datetime "date"
-    t.index ["sport_id"], name: "index_measurements_on_sport_id"
+  create_table 'measurements', force: :cascade do |t|
+    t.string 'time'
+    t.bigint 'sport_id', null: false
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.datetime 'date'
+    t.index ['sport_id'], name: 'index_measurements_on_sport_id'
   end
 
-  create_table "progresses", force: :cascade do |t|
-    t.string "today"
-    t.string "yesterday"
-    t.string "lastweek"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "twodaysago"
+  create_table 'progresses', force: :cascade do |t|
+    t.string 'today'
+    t.string 'yesterday'
+    t.string 'lastweek'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.string 'twodaysago'
   end
 
-  create_table "sports", force: :cascade do |t|
-    t.string "name"
-    t.string "slug"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table 'sports', force: :cascade do |t|
+    t.string 'name'
+    t.string 'slug'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
 
-  add_foreign_key "measurements", "sports"
+  add_foreign_key 'measurements', 'sports'
 end
