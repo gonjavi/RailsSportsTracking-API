@@ -21,6 +21,8 @@ Expected Result
 ![screenshot](./img/sportsget2.png)  
 
 
+
+
 - You can use GET to the following URL to get all measurements:
 
 https://trackingapi-gon.herokuapp.com/api/v1/measurements
@@ -33,6 +35,8 @@ Click on send
 Expected Result
 
 ![screenshot](./img/measurementsget2.png)  
+
+
 
 
 - You can use POST to the following URL to create a new measurement:
@@ -55,6 +59,8 @@ Click on send
 Expected Result
 
 ![screenshot](./img/measurementspost3.png)  
+
+
 
 
 - You can use DELETE to the following URL to destroy a measurement, adding the id number of the measurement at the end:
