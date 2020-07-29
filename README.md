@@ -12,9 +12,28 @@ Use a program like Insomnia or Postman.
 
 https://trackingapi-gon.herokuapp.com/api/v1/sports.json
 
+Click on send
+
+![screenshot](./img/sportsget.png)  
+
+Expected Result
+
+![screenshot](./img/sportsget2.png)  
+
+
 - You can use GET to the following URL to get all measurements:
 
 https://trackingapi-gon.herokuapp.com/api/v1/measurements
+
+
+Click on send
+
+![screenshot](./img/measurementsget.png)  
+
+Expected Result
+
+![screenshot](./img/measurementsget2.png)  
+
 
 - You can use POST to the following URL to create a new measurement:
 
@@ -22,14 +41,34 @@ https://trackingapi-gon.herokuapp.com/api/v1/measurements
 
 including a JSON similar to the next one:
 {
-	"time": "05:02",
+	"time": "01:02",
 	"date": "2020-07-15T08:49:51.141Z",
-	"sport_id": 3
+	"sport_id": 2
 }
+
+![screenshot](./img/measurementspost2.png)  
+
+Click on send
+
+![screenshot](./img/measurementspost.png)  
+
+Expected Result
+
+![screenshot](./img/measurementspost3.png)  
+
 
 - You can use DELETE to the following URL to destroy a measurement, adding the id number of the measurement at the end:
 
 https://trackingapi-gon.herokuapp.com/api/v1/measurements/id
+
+Click on send
+
+![screenshot](./img/measurementsdelete.png)  
+
+Expected Result
+
+![screenshot](./img/measurementsdelete2.png)  
+
 
 
 ### Prerequisites
